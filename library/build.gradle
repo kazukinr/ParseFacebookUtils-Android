@@ -1,6 +1,7 @@
 import com.android.builder.core.BuilderConstants
 
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
 group = 'com.parse'
 version = '1.10.6-SNAPSHOT'
@@ -15,10 +16,12 @@ ext {
 buildscript {
     repositories {
         jcenter()
+        mavenCentral()
     }
 
     dependencies {
         classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.0.1x'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
 }
 
